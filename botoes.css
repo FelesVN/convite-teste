@@ -1,0 +1,68 @@
+.btn {
+    border: none;
+    font-family: 'Lato';
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+  }
+  
+  .btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .btn:before {
+    font-family: 'FontAwesome';
+    line-height: 1;
+    position: relative;
+  }
+  
+  
+  /* Icon separator */
+  .btn-sep {
+    padding: 10px 40px 10px 80px;
+    border-radius: 20px;
+  }
+  
+  .btn-sep:before {
+    background: rgb(196, 0, 104);
+  }
+  
+  /* Button 1 */
+  .btn-1 {
+    background: deeppink;
+    color: #fff;
+  }
+  
+  .btn-1:hover {
+    background: rgb(185, 4, 101);
+  }
+  
+  .btn-1:active {
+    background: deeppink;
+    top: 2px;
+  }
+  
+  .btn-1:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: -8px;
+    border-radius: 50%;
+    content: "\f1d8";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
